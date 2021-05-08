@@ -12,8 +12,10 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :post %>
-    <%= form.text_area :post %>
+    <div class="control">
+      <%= form.label :post %>
+      <%= form.text_area :post, class:"textarea" %>
+    </div>
   </div>
 
   <div class="actions">
