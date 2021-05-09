@@ -51,6 +51,7 @@
                 <%= gravatar_image_tag(post.user.email, size:64, alt: post.user.name) %>
               </figure>
             </div>
+           
             <div class="media-content">
               <div class="content">
                 <strong><%= post.user.name %></strong>
@@ -60,20 +61,17 @@
               </div>
               <nav class="level-left is-mobile">
                 <%= link_to post, class: "level-item" do%>
-                  <span class="icon">
-                    <i class="fa fa-link" aria-hidden="true">View</i>
-                  </span>
+                  View
+                <% end %>
+                <%= link_to post, class: "level-item" do%>
+                  {<%= pluralize(post.comments.count, "Comment") %>}
                 <% end %>
                 <% if current_user.email==post.user.email %>
                   <%= link_to edit_post_path(post),  class: "level-item" do %>
-                    <span class="icon">
-                      <i class="fa fa-pencil" aria-hidden="true">Edit</i>
-                    </span>
+                  Update Post
                   <% end %>
                   <%= link_to post, method: :delete, data: { confirm: 'Are you sure?' } do%>
-                    <span class="icon">
-                      <i class="fa fa-trash-o" aria-hidden="true">Delete</i>
-                    </span>
+                   Remove Post
                   <% end %>
                 <% end %>
 
