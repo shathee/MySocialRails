@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  get 'greetings/hello'
   root "posts#index"
 
   devise_for :users
