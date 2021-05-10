@@ -1,24 +1,15 @@
-# README
+# MySocial
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Live Application can be seen in https://mighty-waters-96828.herokuapp.com/ 
+email                                                           password
+john.kunze@goldner.net                         123456
+cornelius@hand.name                            123456
+edgardo@heidenreich.com                    123456 
+bob@armstrong.co                                  123456
 
-Things you may want to cover:
 
-* Ruby version
+## Built on
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby version : 3.0 >
+* Rails 6
+* Postgres
